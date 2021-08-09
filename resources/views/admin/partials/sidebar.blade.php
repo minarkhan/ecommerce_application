@@ -47,6 +47,18 @@
             </a>
         </li>
         <li>
+            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.posts.index' ? 'active' : '' }}" href="{{ route('admin.posts.index') }}">
+                <i class="app-menu__icon fa fa-cogs"></i>
+                <span class="app-menu__label">Posts</span>
+            </a>
+        </li>
+        <li>
+            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.users.index' ? 'active' : '' }}" href="{{ route('admin.users.index') }}">
+                <i class="app-menu__icon fa fa-cogs"></i>
+                <span class="app-menu__label">Users</span>
+            </a>
+        </li>
+        <li>
             <a class="app-menu__item {{ Route::currentRouteName() == 'admin.settings' ? 'active' : '' }}" href="{{ route('admin.settings') }}">
                 <i class="app-menu__icon fa fa-cogs"></i>
                 <span class="app-menu__label">Settings</span>
